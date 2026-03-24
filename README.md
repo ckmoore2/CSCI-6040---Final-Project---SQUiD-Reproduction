@@ -114,17 +114,17 @@ CSCI-6040---Final-Project---SQUiD-Reproduction/
 ├── notebooks/                      # Colab / Jupyter notebooks for running experiments
 │
 ├── scripts/
-│   ├── noise_injector.py           # Generates all 12 noisy dataset variants (Curtis)
-│   ├── run_squid_batch.py          # Runs SQUiD on all noisy inputs (Jaret)
-│   ├── run_baseline_batch.py       # Runs GPT-4 baseline on all noisy inputs (Zach)
-│   └── compute_sensitivity_metrics.py  # Aggregates metrics across all variants (Zach)
+│   ├── noise_injector.py           # Generates all 12 noisy dataset variants 
+│   ├── run_squid_batch.py          # Runs SQUiD on all noisy inputs 
+│   ├── run_baseline_batch.py       # Runs GPT-4 baseline on all noisy inputs 
+│   └── compute_sensitivity_metrics.py  # Aggregates metrics across all variants 
 │
 ├── results/
 │   ├── reproduction/               # Outputs from the core reproduction run
-│   │   ├── stage1_output.json      # Schema Generation output (Jaret)
-│   │   ├── stage2_output.json      # Value Identification output (Jaret)
-│   │   ├── stage3_output.json      # Table Population output (Curtis)
-│   │   ├── output.db               # Final SQLite database (Curtis)
+│   │   ├── stage1_output.json      # Schema Generation output 
+│   │   ├── stage2_output.json      # Value Identification output
+│   │   ├── stage3_output.json      # Table Population output 
+│   │   ├── output.db               # Final SQLite database
 │   │   └── squid_metrics.json      # All four metrics for the reproduction run
 │   │
 │   └── sensitivity/                # Outputs from the noise experiment
@@ -164,5 +164,3 @@ If you accidentally stage any of these, run `git rm --cached <filename>` before 
 ---
 
 ## Questions
-
-Post in the team group chat. If you're stuck on something for more than 30 minutes, flag it — don't block the pipeline silently.
