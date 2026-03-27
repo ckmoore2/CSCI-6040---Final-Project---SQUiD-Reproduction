@@ -3,3 +3,6 @@
 __pycache__/
 squid-env/
 *.pyc
+.idea/
+requirements_mac.txt
+config.yaml.original

@@ -1,0 +1,47 @@
+schema_generation:
+    datapath: "BIRD/bird_dataset"
+    num_of_entries: 192
+    model_name: "claude"
+    prompt_type: "cot"
+    method: "text"
+    base_data_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/SQUiD/dataset"
+    logs_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/logs/schema"
+    results_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage1"
+
+value_identification:
+    datapath: "SyntheticText/merged_dataset2/text_cot_claude"
+    num_of_entries: 192
+    model_name: "claude"
+    method: "symbolic"
+    base_data_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage1"
+    logs_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/logs/values"
+    results_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage2"
+    schema_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage1/schema.json"
+
+value_population:
+    datapath: "SyntheticText/merged_dataset2/text_cot_claude"
+    num_of_entries: 192
+    model_name: "claude"
+    method: "TS"
+    base_data_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage2"
+    logs_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/logs/population"
+    results_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage3"
+    symbolic_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage2/symbolic.json"
+
+database_generation:
+    datapath: "SyntheticText/merged_dataset2/text_cot_claude"
+    num_of_entries: 192
+    model_name: "claude"
+    method: "TS"
+    base_data_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage3"
+    logs_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/logs/database"
+    results_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/stage4"
+
+baseline:
+    datapath: "SyntheticText/merged_dataset2"
+    num_of_entries: 192
+    model_name: "claude"
+    method: None
+    base_data_path: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/SQUiD/dataset"
+    logs_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/logs/baseline"
+    results_dir: "/Users/blkcoder/Desktop/SQUiD Project/CSCI-6040---Final-Project---SQUiD-Reproduction/results/reproduction/baseline"
