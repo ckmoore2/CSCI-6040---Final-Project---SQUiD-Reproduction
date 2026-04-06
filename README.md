@@ -42,7 +42,10 @@ SQUiD's compute happens through LLM API calls — not GPU workloads. Colab's ses
 - Dataset: BIRD (`bird_dataset.json`, 384 entries)
 
 **Jaret:**
-- *(fill in after setup)*
+- Windows 11 (x64)-
+- Python 3.13
+- `claude-haiku-4-5-20251001` via Anthropic API
+- Dataset: BIRD (`bird_dataset.json`, 192 entries)
 
 **Zach:**
 - *(fill in after setup)*
