@@ -74,27 +74,20 @@ git clone https://github.com/ckmoore2/CSCI-6040---Final-Project---SQUiD-Reproduc
 cd squid-reproduction
 ```
 
-> Share this exact command with teammates so everyone's local folder is named `squid-reproduction`.
+> The `squid-reproduction` alias keeps your local folder name short and matches all path references in the scripts. Share this exact command with teammates.
 
 ---
 
-### Step 2 — Clone the official SQUiD repo
+### Step 2 — The SQUiD codebase is already in the repo
 
-```bash
-git clone https://github.com/Mushtari-Sadia/SQUiD.git
-```
+The `SQUiD/` folder is already tracked — no separate clone needed. It contains the full codebase, datasets, and configs.
 
-Record the commit hash immediately — this goes into Table 1 of the report:
+Record the SQUiD commit hash for your report (Table 1):
 
 ```bash
 cd SQUiD && git log --oneline -1
 cd ..
 ```
-
-> **Important:** Remove SQUiD's own `.git` folder so Git doesn't treat it as a submodule:
-> ```bash
-> rm -rf SQUiD/.git
-> ```
 
 ---
 
@@ -103,11 +96,9 @@ cd ..
 ```bash
 python -m venv squid-env
 source squid-env/bin/activate      # Mac / Linux
-squid-env\Scripts\activate         # Windows
 ```
 
 Your terminal prompt should show `(squid-env)` before proceeding.
-
 ---
 
 ### Step 4 — Install dependencies
@@ -120,12 +111,12 @@ pip install -r requirements_mac.txt
 pip install pyyaml anthropic openai python-dotenv pandas matplotlib seaborn
 ```
 
-> Several packages are missing from `requirements.txt` but required at runtime — install them as errors appear:
+> Additional packages missing from `requirements.txt` — install as errors appear:
 > ```bash
 > pip install json-repair pyyaml anthropic
 > ```
 
-Verify core packages installed:
+Verify:
 
 ```bash
 python -c "import anthropic, pandas, matplotlib, yaml, json_repair; print('all ok')"
@@ -172,34 +163,24 @@ os.environ["ANTHROPIC_API_KEY"] = userdata.get("ANTHROPIC_API_KEY")
 
 ### Step 6 — Update model.py to load the API key from .env
 
-Open `SQUiD/src/model.py`. The `load_dotenv()` call needs an explicit path since SQUiD runs from inside its own subdirectory. Replace the top two lines:
+`SQUiD/src/model.py` uses an explicit dotenv path since SQUiD runs from inside its own subdirectory. The file in this repo is already updated, but verify the top of `model.py` contains:
 
 ```python
-# Replace this:
-from dotenv import load_dotenv
-load_dotenv()
-
-# With this:
 from dotenv import load_dotenv
 from pathlib import Path
 load_dotenv(Path(__file__).resolve().parent.parent.parent / ".env")
 ```
 
-Also update the Anthropic client line in `__init__`:
+And the Anthropic client uses:
 
 ```python
-# Replace this:
-self.client = Anthropic(api_key="")
-
-# With this:
 self.client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY", ""))
 ```
-
 ---
 
 ### Step 7 — Configure SQUiD
 
-The config file at `SQUiD/configs/config.yaml` has placeholder paths that must be filled in. Update all `/add_path/` entries to point to your local paths:
+Update `SQUiD/configs/config.yaml` — replace all `/add_path/` entries with your actual local paths:
 
 ```yaml
 schema_generation:
@@ -213,7 +194,7 @@ schema_generation:
     logs_dir: "/your/path/to/squid-reproduction/results/reproduction/logs/schema"
 ```
 
-Repeat for `value_identification`, `value_population`, `database_generation`, and `baseline` — updating `base_data_path`, `results_dir`, and `logs_dir` for each.
+Repeat for `value_identification`, `value_population`, `database_generation`, and `baseline`.
 
 ---
 
@@ -348,40 +329,39 @@ The datasets are pre-generated natural language text files — the authors conve
 ```
 squid-reproduction/
 │
-├── SQUiD/                              # Official SQUiD codebase
-│   ├── configs/
-│   │   └── config.yaml                 # Pipeline config — fill in your local paths
-│   ├── dataset/
-│   │   ├── BIRD/                       # BIRD benchmark dataset
-│   │   ├── SyntheticText/              # Synthetic travel/booking text
-│   │   └── RealDocuments/             # CNN, COVID, Wikipedia docs
+├── SQUiD/                              # Official SQUiD codebase (included in repo)
+│   ├── configs/config.yaml             # Pipeline config — fill in your local paths
+│   ├── dataset/                        # All benchmark datasets
+│   │   ├── BIRD/
+│   │   ├── SyntheticText/
+│   │   └── RealDocuments/
 │   └── src/
 │       ├── schema_generation.py        # Stage 1
 │       ├── value_identification.py     # Stage 2
 │       ├── value_population.py         # Stage 3
 │       ├── database_generation.py      # Stage 4
 │       ├── baseline.py                 # LLM baseline
-│       ├── model.py                    # LLM client (updated for .env loading)
-│       └── utils.py                    # Shared utilities
+│       ├── model.py                    # LLM client (updated — loads from .env)
+│       └── utils.py
 │
 ├── data/
 │   ├── clean/                          # Reserved for noise experiment base inputs
 │   └── noisy/                          # 12 noisy variants (4 types × 3 levels)
 │
 ├── scripts/
-│   ├── noise_injector.py               # Generates noisy dataset variants (Curtis)
-│   ├── run_squid_batch.py              # Batch SQUiD runs on noisy inputs (Jaret)
-│   ├── run_baseline_batch.py           # Batch baseline runs on noisy inputs (Zach)
-│   └── compute_sensitivity_metrics.py  # Aggregates metrics across variants (Zach)
+│   ├── noise_injector.py               # Generates noisy dataset variants 
+│   ├── run_squid_batch.py              # Batch SQUiD runs on noisy inputs 
+│   ├── run_baseline_batch.py           # Batch baseline runs 
+│   └── compute_sensitivity_metrics.py  # Aggregates metrics 
 │
 ├── results/
 │   ├── reproduction/
-│   │   ├── stage1/                     # Schema Generation output ✅
+│   │   ├── stage1/                     # Schema Generation output
 │   │   ├── stage2/                     # Value Identification output
 │   │   ├── stage3/                     # Table Population output
 │   │   ├── stage4/                     # SQLite databases
 │   │   ├── baseline/                   # Baseline LLM output
-│   │   └── logs/                       # Per-stage run logs
+│   │   └── logs/
 │   └── sensitivity/                    # Noise experiment outputs
 │
 ├── .env                                # Your API key — NEVER commit this
