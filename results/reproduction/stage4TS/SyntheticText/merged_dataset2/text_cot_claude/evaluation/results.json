@@ -1,0 +1,752 @@
+{
+    "california_schools_0": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_1": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_2": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_3": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_4": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_5": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_6": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_7": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_8": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_9": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_10": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_11": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_12": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_13": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_14": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_15": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_16": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_17": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_18": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_19": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_20": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_21": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_22": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_23": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_24": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_25": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_26": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_27": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_28": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_29": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_30": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_31": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_32": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_33": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_34": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_35": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_36": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_37": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_38": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_39": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_40": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_41": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_42": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_43": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_44": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_45": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_46": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_47": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_48": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_49": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_50": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_51": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_52": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_53": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_54": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_55": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_56": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_57": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_58": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_59": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_60": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_61": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_62": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_63": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_64": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_65": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_66": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_67": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_68": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_69": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_70": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_71": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_72": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_73": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_74": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_75": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_76": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_77": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_78": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_79": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_80": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_81": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_82": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_83": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_84": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_85": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_86": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_87": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_88": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_89": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_90": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_91": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_92": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_93": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_94": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_95": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_96": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_97": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_98": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_99": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_100": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_101": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_102": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_103": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_104": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_105": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_106": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_107": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_108": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_109": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_110": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_111": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_112": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_113": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_114": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_115": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_116": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_117": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_118": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_119": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_120": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_121": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_122": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_123": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_124": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_125": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_126": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_127": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_128": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_129": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_130": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_131": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_132": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_133": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_134": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_135": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_136": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_137": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_138": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_139": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_140": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_141": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_142": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "books_143": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "computer_student_144": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "mental_health_survey_145": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "authors_146": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "california_schools_147": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "financial_148": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "superhero_149": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    }
+}

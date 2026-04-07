@@ -1,0 +1,482 @@
+{
+    "finance_0": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_1": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_2": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_3": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_4": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_5": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_6": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_7": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_8": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_9": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_10": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_11": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_12": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_13": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_14": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_15": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_16": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_17": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_18": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_19": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_20": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_21": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_22": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_23": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_24": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_25": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_26": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_27": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_28": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_29": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_30": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_31": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_32": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_33": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_34": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_35": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_36": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_37": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_38": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_39": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_40": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_41": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_42": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_43": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_44": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_45": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_46": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_47": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_48": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_49": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_50": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_51": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_52": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_53": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_54": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_55": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_56": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_57": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_58": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_59": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_60": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_61": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_62": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_63": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_64": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_65": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_66": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_67": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_68": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_69": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_70": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_71": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_72": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_73": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_74": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_75": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_76": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_77": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_78": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_79": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_80": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_81": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_82": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_83": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_84": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_85": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_86": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_87": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_88": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_89": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_90": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_91": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "finance_92": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "tourism_93": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "healthcare_94": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    },
+    "education_95": {
+        "avg_row_accuracy": 0,
+        "match_accuracy": 0,
+        "match_in_right_column_accuracy": 0
+    }
+}
