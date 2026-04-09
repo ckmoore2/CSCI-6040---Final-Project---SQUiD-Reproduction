@@ -1,0 +1,928 @@
+Schema: ```python
+schema = [
+    {
+        "table_name": "county",
+        "columns": [
+            {"name": "county_id", "type": "INTEGER", "primary_key": True},
+            {"name": "county_name", "type": "TEXT", "not_null": True},
+            {"name": "state", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "district",
+        "columns": [
+            {"name": "district_id", "type": "INTEGER", "primary_key": True},
+            {"name": "district_name", "type": "TEXT", "not_null": True},
+            {"name": "district_type", "type": "TEXT"},
+            {"name": "county_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "county", "foreign_key_column": "county_id"}
+        ]
+    },
+    {
+        "table_name": "school",
+        "columns": [
+            {"name": "school_id", "type": "INTEGER", "primary_key": True},
+            {"name": "school_name", "type": "TEXT", "not_null": True},
+            {"name": "school_code", "type": "INTEGER", "unique": True},
+            {"name": "cdscode", "type": "TEXT", "unique": True},
+            {"name": "school_type", "type": "TEXT"},
+            {"name": "educational_option_type", "type": "TEXT"},
+            {"name": "street_address", "type": "TEXT"},
+            {"name": "street_abbreviation", "type": "TEXT"},
+            {"name": "city", "type": "TEXT"},
+            {"name": "zip_code", "type": "TEXT"},
+            {"name": "mail_street_address", "type": "TEXT"},
+            {"name": "mail_street_abbreviation", "type": "TEXT"},
+            {"name": "mail_city", "type": "TEXT"},
+            {"name": "mail_zip_code", "type": "TEXT"},
+            {"name": "phone_number", "type": "TEXT"},
+            {"name": "opening_date", "type": "DATE"},
+            {"name": "academic_year", "type": "TEXT"},
+            {"name": "district_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "district", "foreign_key_column": "district_id"},
+            {"name": "county_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "county", "foreign_key_column": "county_id"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "county",
+        "columns": [
+            {"name": "county_id", "type": "INTEGER", "primary_key": True},
+            {"name": "county_name", "type": "TEXT", "not_null": True},
+            {"name": "state", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "district",
+        "columns": [
+            {"name": "district_id", "type": "INTEGER", "primary_key": True},
+            {"name": "district_name", "type": "TEXT", "not_null": True},
+            {"name": "district_type", "type": "TEXT"},
+            {"name": "county_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "county", "foreign_key_column": "county_id"}
+        ]
+    },
+    {
+        "table_name": "school",
+        "columns": [
+            {"name": "school_id", "type": "INTEGER", "primary_key": True},
+            {"name": "school_name", "type": "TEXT", "not_null": True},
+            {"name": "school_code", "type": "INTEGER", "unique": True},
+            {"name": "cdscode", "type": "TEXT", "unique": True},
+            {"name": "school_type", "type": "TEXT"},
+            {"name": "educational_option_type", "type": "TEXT"},
+            {"name": "street_address", "type": "TEXT"},
+            {"name": "street_abbreviation", "type": "TEXT"},
+            {"name": "city", "type": "TEXT"},
+            {"name": "zip_code", "type": "TEXT"},
+            {"name": "mail_street_address", "type": "TEXT"},
+            {"name": "mail_street_abbreviation", "type": "TEXT"},
+            {"name": "mail_city", "type": "TEXT"},
+            {"name": "mail_zip_code", "type": "TEXT"},
+            {"name": "phone_number", "type": "TEXT"},
+            {"name": "opening_date", "type": "DATE"},
+            {"name": "academic_year", "type": "TEXT"},
+            {"name": "district_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "district", "foreign_key_column": "district_id"},
+            {"name": "county_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "county", "foreign_key_column": "county_id"}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'county', 'columns': [{'name': 'county_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'county_name', 'type': 'TEXT', 'not_null': True}, {'name': 'state', 'type': 'TEXT', 'not_null': True}]}, {'table_name': 'district', 'columns': [{'name': 'district_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'district_name', 'type': 'TEXT', 'not_null': True}, {'name': 'district_type', 'type': 'TEXT'}, {'name': 'county_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'county', 'foreign_key_column': 'county_id'}]}, {'table_name': 'school', 'columns': [{'name': 'school_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'school_name', 'type': 'TEXT', 'not_null': True}, {'name': 'school_code', 'type': 'INTEGER', 'unique': True}, {'name': 'cdscode', 'type': 'TEXT', 'unique': True}, {'name': 'school_type', 'type': 'TEXT'}, {'name': 'educational_option_type', 'type': 'TEXT'}, {'name': 'street_address', 'type': 'TEXT'}, {'name': 'street_abbreviation', 'type': 'TEXT'}, {'name': 'city', 'type': 'TEXT'}, {'name': 'zip_code', 'type': 'TEXT'}, {'name': 'mail_street_address', 'type': 'TEXT'}, {'name': 'mail_street_abbreviation', 'type': 'TEXT'}, {'name': 'mail_city', 'type': 'TEXT'}, {'name': 'mail_zip_code', 'type': 'TEXT'}, {'name': 'phone_number', 'type': 'TEXT'}, {'name': 'opening_date', 'type': 'DATE'}, {'name': 'academic_year', 'type': 'TEXT'}, {'name': 'district_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'district', 'foreign_key_column': 'district_id'}, {'name': 'county_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'county', 'foreign_key_column': 'county_id'}]}]
+Ground Truth Entities: dict_keys(['cdscode', 'academic year', 'county code', 'district code', 'school code', 'county name', 'district name', 'school name', 'district type', 'school type', 'educational option type', 'county', 'district', 'school', 'street', 'streetabr', 'city', 'zip', 'state', 'mailstreet', 'mailstrabr', 'mailcity', 'mailzip', 'mailstate', 'phone', 'opendate'])
+****************************************
+Entity Coverage: 78.55%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 100.00%
+****************************************
+Schema: ```python
+schema = [
+    {
+        "table_name": "person",
+        "columns": [
+            {"name": "person_id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT"},
+            {"name": "birth_date", "type": "DATE", "not_null": True},
+            {"name": "gender", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "bank",
+        "columns": [
+            {"name": "bank_id", "type": "INTEGER", "primary_key": True},
+            {"name": "bank_code", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "bank_name", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "account",
+        "columns": [
+            {"name": "account_id", "type": "INTEGER", "primary_key": True},
+            {"name": "account_number", "type": "TEXT", "not_null": True},
+            {"name": "person_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "person", "foreign_key_column": "person_id"},
+            {"name": "bank_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "bank", "foreign_key_column": "bank_id"},
+            {"name": "balance", "type": "DECIMAL(15,2)", "not_null": True},
+            {"name": "currency_symbol", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "transaction_type",
+        "columns": [
+            {"name": "transaction_type_id", "type": "INTEGER", "primary_key": True},
+            {"name": "type_code", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "type_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "payment_frequency",
+        "columns": [
+            {"name": "frequency_id", "type": "INTEGER", "primary_key": True},
+            {"name": "frequency_code", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "frequency_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "transaction",
+        "columns": [
+            {"name": "transaction_id", "type": "INTEGER", "primary_key": True},
+            {"name": "transaction_date", "type": "DATE", "not_null": True},
+            {"name": "source_account_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "account", "foreign_key_column": "account_id"},
+            {"name": "destination_account_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "account", "foreign_key_column": "account_id"},
+            {"name": "amount", "type": "DECIMAL(15,2)", "not_null": True},
+            {"name": "transaction_type_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "transaction_type", "foreign_key_column": "transaction_type_id"},
+            {"name": "frequency_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "payment_frequency", "foreign_key_column": "frequency_id"},
+            {"name": "processing_date", "type": "DATE"},
+            {"name": "post_transaction_balance", "type": "DECIMAL(15,2)"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "person",
+        "columns": [
+            {"name": "person_id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT"},
+            {"name": "birth_date", "type": "DATE", "not_null": True},
+            {"name": "gender", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "bank",
+        "columns": [
+            {"name": "bank_id", "type": "INTEGER", "primary_key": True},
+            {"name": "bank_code", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "bank_name", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "account",
+        "columns": [
+            {"name": "account_id", "type": "INTEGER", "primary_key": True},
+            {"name": "account_number", "type": "TEXT", "not_null": True},
+            {"name": "person_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "person", "foreign_key_column": "person_id"},
+            {"name": "bank_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "bank", "foreign_key_column": "bank_id"},
+            {"name": "balance", "type": "DECIMAL(15,2)", "not_null": True},
+            {"name": "currency_symbol", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "transaction_type",
+        "columns": [
+            {"name": "transaction_type_id", "type": "INTEGER", "primary_key": True},
+            {"name": "type_code", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "type_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "payment_frequency",
+        "columns": [
+            {"name": "frequency_id", "type": "INTEGER", "primary_key": True},
+            {"name": "frequency_code", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "frequency_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "transaction",
+        "columns": [
+            {"name": "transaction_id", "type": "INTEGER", "primary_key": True},
+            {"name": "transaction_date", "type": "DATE", "not_null": True},
+            {"name": "source_account_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "account", "foreign_key_column": "account_id"},
+            {"name": "destination_account_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "account", "foreign_key_column": "account_id"},
+            {"name": "amount", "type": "DECIMAL(15,2)", "not_null": True},
+            {"name": "transaction_type_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "transaction_type", "foreign_key_column": "transaction_type_id"},
+            {"name": "frequency_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "payment_frequency", "foreign_key_column": "frequency_id"},
+            {"name": "processing_date", "type": "DATE"},
+            {"name": "post_transaction_balance", "type": "DECIMAL(15,2)"}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'person', 'columns': [{'name': 'person_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'name', 'type': 'TEXT'}, {'name': 'birth_date', 'type': 'DATE', 'not_null': True}, {'name': 'gender', 'type': 'TEXT'}]}, {'table_name': 'bank', 'columns': [{'name': 'bank_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'bank_code', 'type': 'TEXT', 'not_null': True, 'unique': True}, {'name': 'bank_name', 'type': 'TEXT'}]}, {'table_name': 'account', 'columns': [{'name': 'account_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'account_number', 'type': 'TEXT', 'not_null': True}, {'name': 'person_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'person', 'foreign_key_column': 'person_id'}, {'name': 'bank_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'bank', 'foreign_key_column': 'bank_id'}, {'name': 'balance', 'type': 'DECIMAL(15,2)', 'not_null': True}, {'name': 'currency_symbol', 'type': 'TEXT'}]}, {'table_name': 'transaction_type', 'columns': [{'name': 'transaction_type_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'type_code', 'type': 'TEXT', 'not_null': True, 'unique': True}, {'name': 'type_name', 'type': 'TEXT', 'not_null': True}]}, {'table_name': 'payment_frequency', 'columns': [{'name': 'frequency_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'frequency_code', 'type': 'TEXT', 'not_null': True, 'unique': True}, {'name': 'frequency_name', 'type': 'TEXT', 'not_null': True}]}, {'table_name': 'transaction', 'columns': [{'name': 'transaction_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'transaction_date', 'type': 'DATE', 'not_null': True}, {'name': 'source_account_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'account', 'foreign_key_column': 'account_id'}, {'name': 'destination_account_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'account', 'foreign_key_column': 'account_id'}, {'name': 'amount', 'type': 'DECIMAL(15,2)', 'not_null': True}, {'name': 'transaction_type_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'transaction_type', 'foreign_key_column': 'transaction_type_id'}, {'name': 'frequency_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'payment_frequency', 'foreign_key_column': 'frequency_id'}, {'name': 'processing_date', 'type': 'DATE'}, {'name': 'post_transaction_balance', 'type': 'DECIMAL(15,2)'}]}]
+Ground Truth Entities: dict_keys(['issued', 'gender', 'birth_date', 'frequency', 'date', 'bank_to', 'account_to', 'amount', 'symbol', 'type', 'operation', 'balance', 'bank', 'account'])
+****************************************
+Entity Coverage: 74.14%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 100.00%
+****************************************
+Schema: ```python
+schema = [
+    {
+        "table_name": "publisher",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True, "unique": True}
+        ]
+    },
+    {
+        "table_name": "race",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True, "unique": True}
+        ]
+    },
+    {
+        "table_name": "superhero",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "real_name", "type": "TEXT"},
+            {"name": "hero_name", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "height_cm", "type": "DECIMAL(5,2)"},
+            {"name": "weight_kg", "type": "DECIMAL(6,2)"},
+            {"name": "gender", "type": "TEXT"},
+            {"name": "hair_color", "type": "TEXT"},
+            {"name": "alignment", "type": "TEXT", "check": "alignment IN ('good', 'evil', 'neutral')"},
+            {"name": "race_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "race", "foreign_key_column": "id"},
+            {"name": "publisher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "publisher", "foreign_key_column": "id", "not_null": True},
+            {"name": "origin_location", "type": "TEXT"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "publisher",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True, "unique": True}
+        ]
+    },
+    {
+        "table_name": "race",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True, "unique": True}
+        ]
+    },
+    {
+        "table_name": "superhero",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "real_name", "type": "TEXT"},
+            {"name": "hero_name", "type": "TEXT", "not_null": True, "unique": True},
+            {"name": "height_cm", "type": "DECIMAL(5,2)"},
+            {"name": "weight_kg", "type": "DECIMAL(6,2)"},
+            {"name": "gender", "type": "TEXT"},
+            {"name": "hair_color", "type": "TEXT"},
+            {"name": "alignment", "type": "TEXT", "check": "alignment IN ('good', 'evil', 'neutral')"},
+            {"name": "race_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "race", "foreign_key_column": "id"},
+            {"name": "publisher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "publisher", "foreign_key_column": "id", "not_null": True},
+            {"name": "origin_location", "type": "TEXT"}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'publisher', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'name', 'type': 'TEXT', 'not_null': True, 'unique': True}]}, {'table_name': 'race', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'name', 'type': 'TEXT', 'not_null': True, 'unique': True}]}, {'table_name': 'superhero', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'real_name', 'type': 'TEXT'}, {'name': 'hero_name', 'type': 'TEXT', 'not_null': True, 'unique': True}, {'name': 'height_cm', 'type': 'DECIMAL(5,2)'}, {'name': 'weight_kg', 'type': 'DECIMAL(6,2)'}, {'name': 'gender', 'type': 'TEXT'}, {'name': 'hair_color', 'type': 'TEXT'}, {'name': 'alignment', 'type': 'TEXT', 'check': "alignment IN ('good', 'evil', 'neutral')"}, {'name': 'race_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'race', 'foreign_key_column': 'id'}, {'name': 'publisher_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'publisher', 'foreign_key_column': 'id', 'not_null': True}, {'name': 'origin_location', 'type': 'TEXT'}]}]
+Ground Truth Entities: dict_keys(['superhero_name', 'full_name', 'height_cm', 'weight_kg', 'alignment', 'race', 'publisher_name', 'gender', 'colour'])
+****************************************
+Entity Coverage: 88.01%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 100.00%
+****************************************
+Schema: ```python
+schema = [
+    {
+        "table_name": "tv_series",
+        "columns": [
+            {"name": "series_id", "type": "INTEGER", "primary_key": True},
+            {"name": "series_name", "type": "TEXT", "not_null": True},
+            {"name": "total_episodes", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "season",
+        "columns": [
+            {"name": "season_id", "type": "INTEGER", "primary_key": True},
+            {"name": "series_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "tv_series", "foreign_key_column": "series_id"},
+            {"name": "season_number", "type": "INTEGER", "not_null": True},
+            {"name": "unique_key": "UNIQUE(series_id, season_number)"}
+        ]
+    },
+    {
+        "table_name": "episode",
+        "columns": [
+            {"name": "episode_id", "type": "INTEGER", "primary_key": True},
+            {"name": "season_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "season", "foreign_key_column": "season_id"},
+            {"name": "episode_number", "type": "INTEGER", "not_null": True},
+            {"name": "overall_episode_number", "type": "INTEGER"},
+            {"name": "episode_title", "type": "TEXT", "not_null": True},
+            {"name": "air_date", "type": "DATE"},
+            {"name": "rating", "type": "DECIMAL(3,1)"},
+            {"name": "vote_count", "type": "INTEGER"},
+            {"name": "plot_summary", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "character",
+        "columns": [
+            {"name": "character_id", "type": "INTEGER", "primary_key": True},
+            {"name": "character_name", "type": "TEXT", "not_null": True},
+            {"name": "character_role", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "episode_character",
+        "columns": [
+            {"name": "episode_character_id", "type": "INTEGER", "primary_key": True},
+            {"name": "episode_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "episode", "foreign_key_column": "episode_id"},
+            {"name": "character_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "character", "foreign_key_column": "character_id"}
+        ]
+    },
+    {
+        "table_name": "person",
+        "columns": [
+            {"name": "person_id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "crew_member",
+        "columns": [
+            {"name": "crew_id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "person", "foreign_key_column": "person_id"},
+            {"name": "role", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "episode_crew",
+        "columns": [
+            {"name": "episode_crew_id", "type": "INTEGER", "primary_key": True},
+            {"name": "episode_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "episode", "foreign_key_column": "episode_id"},
+            {"name": "crew_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "crew_member", "foreign_key_column": "crew_id"}
+        ]
+    },
+    {
+        "table_name": "award",
+        "columns": [
+            {"name": "award_id", "type": "INTEGER", "primary_key": True},
+            {"name": "award_name", "type": "TEXT", "not_null": True},
+            {"name": "award_year", "type": "INTEGER"},
+            {"name": "award_ceremony", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "award_category",
+        "columns": [
+            {"name": "category_id", "type": "INTEGER", "primary_key": True},
+            {"name": "award_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "award", "foreign_key_column": "award_id"},
+            {"name": "category_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "nomination",
+        "columns": [
+            {"name": "nomination_id", "type": "INTEGER", "primary_key": True},
+            {"name": "category_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "award_category", "foreign_key_column": "category_id"},
+            {"name": "episode_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "episode", "foreign_key_column": "episode_id"},
+            {"name": "crew_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "crew_member", "foreign_key_column": "crew_id"},
+            {"name": "won", "type": "BOOLEAN"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "tv_series",
+        "columns": [
+            {"name": "series_id", "type": "INTEGER", "primary_key": True},
+            {"name": "series_name", "type": "TEXT", "not_null": True},
+            {"name": "total_episodes", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "season",
+        "columns": [
+            {"name": "season_id", "type": "INTEGER", "primary_key": True},
+            {"name": "series_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "tv_series", "foreign_key_column": "series_id"},
+            {"name": "season_number", "type": "INTEGER", "not_null": True},
+            {"name": "unique_key": "UNIQUE(series_id, season_number)"}
+        ]
+    },
+    {
+        "table_name": "episode",
+        "columns": [
+            {"name": "episode_id", "type": "INTEGER", "primary_key": True},
+            {"name": "season_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "season", "foreign_key_column": "season_id"},
+            {"name": "episode_number", "type": "INTEGER", "not_null": True},
+            {"name": "overall_episode_number", "type": "INTEGER"},
+            {"name": "episode_title", "type": "TEXT", "not_null": True},
+            {"name": "air_date", "type": "DATE"},
+            {"name": "rating", "type": "DECIMAL(3,1)"},
+            {"name": "vote_count", "type": "INTEGER"},
+            {"name": "plot_summary", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "character",
+        "columns": [
+            {"name": "character_id", "type": "INTEGER", "primary_key": True},
+            {"name": "character_name", "type": "TEXT", "not_null": True},
+            {"name": "character_role", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "episode_character",
+        "columns": [
+            {"name": "episode_character_id", "type": "INTEGER", "primary_key": True},
+            {"name": "episode_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "episode", "foreign_key_column": "episode_id"},
+            {"name": "character_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "character", "foreign_key_column": "character_id"}
+        ]
+    },
+    {
+        "table_name": "person",
+        "columns": [
+            {"name": "person_id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "crew_member",
+        "columns": [
+            {"name": "crew_id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "person", "foreign_key_column": "person_id"},
+            {"name": "role", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "episode_crew",
+        "columns": [
+            {"name": "episode_crew_id", "type": "INTEGER", "primary_key": True},
+            {"name": "episode_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "episode", "foreign_key_column": "episode_id"},
+            {"name": "crew_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "crew_member", "foreign_key_column": "crew_id"}
+        ]
+    },
+    {
+        "table_name": "award",
+        "columns": [
+            {"name": "award_id", "type": "INTEGER", "primary_key": True},
+            {"name": "award_name", "type": "TEXT", "not_null": True},
+            {"name": "award_year", "type": "INTEGER"},
+            {"name": "award_ceremony", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "award_category",
+        "columns": [
+            {"name": "category_id", "type": "INTEGER", "primary_key": True},
+            {"name": "award_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "award", "foreign_key_column": "award_id"},
+            {"name": "category_name", "type": "TEXT", "not_null": True}
+        ]
+    },
+    {
+        "table_name": "nomination",
+        "columns": [
+            {"name": "nomination_id", "type": "INTEGER", "primary_key": True},
+            {"name": "category_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "award_category", "foreign_key_column": "category_id"},
+            {"name": "episode_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "episode", "foreign_key_column": "episode_id"},
+            {"name": "crew_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "crew_member", "foreign_key_column": "crew_id"},
+            {"name": "won", "type": "BOOLEAN"}
+        ]
+    }
+]
+Error: invalid syntax (<string>, line 16)
+Error: A valid schema was not generated.
+Schema: ```python
+schema = [
+    {
+        "table_name": "language",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "code", "type": "TEXT", "unique": True},
+            {"name": "name", "type": "TEXT", "unique": True}
+        ]
+    },
+    {
+        "table_name": "author",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True},
+            {"name": "nationality", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "book",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "title", "type": "TEXT", "not_null": True},
+            {"name": "isbn", "type": "TEXT", "unique": True, "not_null": True},
+            {"name": "page_count", "type": "INTEGER"},
+            {"name": "publication_date", "type": "DATE"},
+            {"name": "language_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "language", "foreign_key_column": "id"},
+            {"name": "is_series", "type": "BOOLEAN", "default": False},
+            {"name": "series_position", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "book_author",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "book_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "book", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "author_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "author", "foreign_key_column": "id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "book_collection",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True},
+            {"name": "total_volumes", "type": "INTEGER"},
+            {"name": "total_pages", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "book_in_collection",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "book_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "book", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "collection_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "book_collection", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "volume_number", "type": "INTEGER"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "language",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "code", "type": "TEXT", "unique": True},
+            {"name": "name", "type": "TEXT", "unique": True}
+        ]
+    },
+    {
+        "table_name": "author",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True},
+            {"name": "nationality", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "book",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "title", "type": "TEXT", "not_null": True},
+            {"name": "isbn", "type": "TEXT", "unique": True, "not_null": True},
+            {"name": "page_count", "type": "INTEGER"},
+            {"name": "publication_date", "type": "DATE"},
+            {"name": "language_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "language", "foreign_key_column": "id"},
+            {"name": "is_series", "type": "BOOLEAN", "default": False},
+            {"name": "series_position", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "book_author",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "book_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "book", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "author_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "author", "foreign_key_column": "id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "book_collection",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT", "not_null": True},
+            {"name": "total_volumes", "type": "INTEGER"},
+            {"name": "total_pages", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "book_in_collection",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "book_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "book", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "collection_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "book_collection", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "volume_number", "type": "INTEGER"}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'language', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'code', 'type': 'TEXT', 'unique': True}, {'name': 'name', 'type': 'TEXT', 'unique': True}]}, {'table_name': 'author', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'name', 'type': 'TEXT', 'not_null': True}, {'name': 'nationality', 'type': 'TEXT'}]}, {'table_name': 'book', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'title', 'type': 'TEXT', 'not_null': True}, {'name': 'isbn', 'type': 'TEXT', 'unique': True, 'not_null': True}, {'name': 'page_count', 'type': 'INTEGER'}, {'name': 'publication_date', 'type': 'DATE'}, {'name': 'language_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'language', 'foreign_key_column': 'id'}, {'name': 'is_series', 'type': 'BOOLEAN', 'default': False}, {'name': 'series_position', 'type': 'INTEGER'}]}, {'table_name': 'book_author', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'book_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'book', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'author_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'author', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}]}, {'table_name': 'book_collection', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'name', 'type': 'TEXT', 'not_null': True}, {'name': 'total_volumes', 'type': 'INTEGER'}, {'name': 'total_pages', 'type': 'INTEGER'}]}, {'table_name': 'book_in_collection', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'book_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'book', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'collection_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'book_collection', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'volume_number', 'type': 'INTEGER'}]}]
+Ground Truth Entities: dict_keys(['title', 'isbn13', 'num_pages', 'publication_date', 'author_name', 'language_code', 'language_name'])
+****************************************
+Entity Coverage: 94.55%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 100.00%
+****************************************
+Schema: ```python
+schema = [
+    {
+        "table_name": "academic_person",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "professional_status", "type": "INTEGER", "not_null": True},
+            {"name": "phase", "type": "INTEGER", "not_null": True},
+            {"name": "years_in_program", "type": "INTEGER", "not_null": True},
+            {"name": "person_type", "type": "TEXT", "not_null": True, "check": "person_type IN ('professor', 'student')"}
+        ]
+    },
+    {
+        "table_name": "professor",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "academic_person", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "faculty_status", "type": "TEXT", "not_null": True},
+            {"name": "tenure_status", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "student",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "academic_person", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "academic_year", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "course",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "course_level", "type": "INTEGER", "not_null": True},
+            {"name": "title", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "course_teaching",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "professor_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "professor", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "course_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "course", "foreign_key_column": "id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "enrollment",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "student_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "student", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "course_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "course", "foreign_key_column": "id", "on_delete": "CASCADE"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "academic_person",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "professional_status", "type": "INTEGER", "not_null": True},
+            {"name": "phase", "type": "INTEGER", "not_null": True},
+            {"name": "years_in_program", "type": "INTEGER", "not_null": True},
+            {"name": "person_type", "type": "TEXT", "not_null": True, "check": "person_type IN ('professor', 'student')"}
+        ]
+    },
+    {
+        "table_name": "professor",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "academic_person", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "faculty_status", "type": "TEXT", "not_null": True},
+            {"name": "tenure_status", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "student",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "person_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "academic_person", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "academic_year", "type": "INTEGER"}
+        ]
+    },
+    {
+        "table_name": "course",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "course_level", "type": "INTEGER", "not_null": True},
+            {"name": "title", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "course_teaching",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "professor_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "professor", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "course_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "course", "foreign_key_column": "id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "enrollment",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "student_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "student", "foreign_key_column": "id", "on_delete": "CASCADE"},
+            {"name": "course_id", "type": "INTEGER", "not_null": True, "foreign_key": True, "foreign_key_table": "course", "foreign_key_column": "id", "on_delete": "CASCADE"}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'academic_person', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'professional_status', 'type': 'INTEGER', 'not_null': True}, {'name': 'phase', 'type': 'INTEGER', 'not_null': True}, {'name': 'years_in_program', 'type': 'INTEGER', 'not_null': True}, {'name': 'person_type', 'type': 'TEXT', 'not_null': True, 'check': "person_type IN ('professor', 'student')"}]}, {'table_name': 'professor', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'person_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'academic_person', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'faculty_status', 'type': 'TEXT', 'not_null': True}, {'name': 'tenure_status', 'type': 'INTEGER'}]}, {'table_name': 'student', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'person_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'academic_person', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'academic_year', 'type': 'INTEGER'}]}, {'table_name': 'course', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'course_level', 'type': 'INTEGER', 'not_null': True}, {'name': 'title', 'type': 'TEXT'}]}, {'table_name': 'course_teaching', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'professor_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'professor', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'course_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'course', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}]}, {'table_name': 'enrollment', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'student_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'student', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}, {'name': 'course_id', 'type': 'INTEGER', 'not_null': True, 'foreign_key': True, 'foreign_key_table': 'course', 'foreign_key_column': 'id', 'on_delete': 'CASCADE'}]}]
+Ground Truth Entities: dict_keys(['professor', 'student', 'hasposition', 'inphase', 'yearsinprogram', 'courselevel'])
+****************************************
+Entity Coverage: 56.87%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 100.00%
+****************************************
+Schema: ```python
+schema = [
+    {
+        "table_name": "person",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT"},
+            {"name": "age", "type": "INTEGER", "constraints": ["NOT NULL", "CHECK (age >= 0)"]}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "person",
+        "columns": [
+            {"name": "id", "type": "INTEGER", "primary_key": True},
+            {"name": "name", "type": "TEXT"},
+            {"name": "age", "type": "INTEGER", "constraints": ["NOT NULL", "CHECK (age >= 0)"]}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'person', 'columns': [{'name': 'id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'name', 'type': 'TEXT'}, {'name': 'age', 'type': 'INTEGER', 'constraints': ['NOT NULL', 'CHECK (age >= 0)']}]}]
+Ground Truth Entities: dict_keys(['questiontext', 'answertext'])
+****************************************
+Entity Coverage: 22.58%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 0.00%
+****************************************
+Schema: ```python
+schema = [
+    {
+        "table_name": "researcher",
+        "columns": [
+            {"name": "researcher_id", "type": "INTEGER", "primary_key": True},
+            {"name": "full_name", "type": "TEXT", "not_null": True},
+            {"name": "short_name", "type": "TEXT"},
+            {"name": "affiliation_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"},
+            {"name": "department_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "department", "foreign_key_column": "department_id"}
+        ]
+    },
+    {
+        "table_name": "affiliation",
+        "columns": [
+            {"name": "affiliation_id", "type": "INTEGER", "primary_key": True},
+            {"name": "institution_name", "type": "TEXT", "not_null": True},
+            {"name": "city", "type": "TEXT"},
+            {"name": "state", "type": "TEXT"},
+            {"name": "postal_code", "type": "TEXT"},
+            {"name": "country", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "department",
+        "columns": [
+            {"name": "department_id", "type": "INTEGER", "primary_key": True},
+            {"name": "department_name", "type": "TEXT", "not_null": True},
+            {"name": "affiliation_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"}
+        ]
+    },
+    {
+        "table_name": "publication",
+        "columns": [
+            {"name": "publication_id", "type": "INTEGER", "primary_key": True},
+            {"name": "full_title", "type": "TEXT", "not_null": True},
+            {"name": "short_name", "type": "TEXT"},
+            {"name": "homepage_url", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "researcher_publication",
+        "columns": [
+            {"name": "researcher_publication_id", "type": "INTEGER", "primary_key": True},
+            {"name": "researcher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "researcher", "foreign_key_column": "researcher_id", "on_delete": "CASCADE"},
+            {"name": "publication_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "publication", "foreign_key_column": "publication_id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "research_team",
+        "columns": [
+            {"name": "team_id", "type": "INTEGER", "primary_key": True},
+            {"name": "team_name", "type": "TEXT", "not_null": True},
+            {"name": "affiliation_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"}
+        ]
+    },
+    {
+        "table_name": "researcher_team",
+        "columns": [
+            {"name": "researcher_team_id", "type": "INTEGER", "primary_key": True},
+            {"name": "researcher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "researcher", "foreign_key_column": "researcher_id", "on_delete": "CASCADE"},
+            {"name": "team_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "research_team", "foreign_key_column": "team_id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "grant",
+        "columns": [
+            {"name": "grant_id", "type": "INTEGER", "primary_key": True},
+            {"name": "grant_code", "type": "TEXT"},
+            {"name": "funding_institution_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"},
+            {"name": "researcher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "researcher", "foreign_key_column": "researcher_id"}
+        ]
+    }
+]
+```
+Extracted Schema: [
+    {
+        "table_name": "researcher",
+        "columns": [
+            {"name": "researcher_id", "type": "INTEGER", "primary_key": True},
+            {"name": "full_name", "type": "TEXT", "not_null": True},
+            {"name": "short_name", "type": "TEXT"},
+            {"name": "affiliation_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"},
+            {"name": "department_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "department", "foreign_key_column": "department_id"}
+        ]
+    },
+    {
+        "table_name": "affiliation",
+        "columns": [
+            {"name": "affiliation_id", "type": "INTEGER", "primary_key": True},
+            {"name": "institution_name", "type": "TEXT", "not_null": True},
+            {"name": "city", "type": "TEXT"},
+            {"name": "state", "type": "TEXT"},
+            {"name": "postal_code", "type": "TEXT"},
+            {"name": "country", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "department",
+        "columns": [
+            {"name": "department_id", "type": "INTEGER", "primary_key": True},
+            {"name": "department_name", "type": "TEXT", "not_null": True},
+            {"name": "affiliation_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"}
+        ]
+    },
+    {
+        "table_name": "publication",
+        "columns": [
+            {"name": "publication_id", "type": "INTEGER", "primary_key": True},
+            {"name": "full_title", "type": "TEXT", "not_null": True},
+            {"name": "short_name", "type": "TEXT"},
+            {"name": "homepage_url", "type": "TEXT"}
+        ]
+    },
+    {
+        "table_name": "researcher_publication",
+        "columns": [
+            {"name": "researcher_publication_id", "type": "INTEGER", "primary_key": True},
+            {"name": "researcher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "researcher", "foreign_key_column": "researcher_id", "on_delete": "CASCADE"},
+            {"name": "publication_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "publication", "foreign_key_column": "publication_id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "research_team",
+        "columns": [
+            {"name": "team_id", "type": "INTEGER", "primary_key": True},
+            {"name": "team_name", "type": "TEXT", "not_null": True},
+            {"name": "affiliation_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"}
+        ]
+    },
+    {
+        "table_name": "researcher_team",
+        "columns": [
+            {"name": "researcher_team_id", "type": "INTEGER", "primary_key": True},
+            {"name": "researcher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "researcher", "foreign_key_column": "researcher_id", "on_delete": "CASCADE"},
+            {"name": "team_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "research_team", "foreign_key_column": "team_id", "on_delete": "CASCADE"}
+        ]
+    },
+    {
+        "table_name": "grant",
+        "columns": [
+            {"name": "grant_id", "type": "INTEGER", "primary_key": True},
+            {"name": "grant_code", "type": "TEXT"},
+            {"name": "funding_institution_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "affiliation", "foreign_key_column": "affiliation_id"},
+            {"name": "researcher_id", "type": "INTEGER", "foreign_key": True, "foreign_key_table": "researcher", "foreign_key_column": "researcher_id"}
+        ]
+    }
+]
+Extracted Schema: [{'table_name': 'researcher', 'columns': [{'name': 'researcher_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'full_name', 'type': 'TEXT', 'not_null': True}, {'name': 'short_name', 'type': 'TEXT'}, {'name': 'affiliation_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'affiliation', 'foreign_key_column': 'affiliation_id'}, {'name': 'department_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'department', 'foreign_key_column': 'department_id'}]}, {'table_name': 'affiliation', 'columns': [{'name': 'affiliation_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'institution_name', 'type': 'TEXT', 'not_null': True}, {'name': 'city', 'type': 'TEXT'}, {'name': 'state', 'type': 'TEXT'}, {'name': 'postal_code', 'type': 'TEXT'}, {'name': 'country', 'type': 'TEXT'}]}, {'table_name': 'department', 'columns': [{'name': 'department_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'department_name', 'type': 'TEXT', 'not_null': True}, {'name': 'affiliation_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'affiliation', 'foreign_key_column': 'affiliation_id'}]}, {'table_name': 'publication', 'columns': [{'name': 'publication_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'full_title', 'type': 'TEXT', 'not_null': True}, {'name': 'short_name', 'type': 'TEXT'}, {'name': 'homepage_url', 'type': 'TEXT'}]}, {'table_name': 'researcher_publication', 'columns': [{'name': 'researcher_publication_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'researcher_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'researcher', 'foreign_key_column': 'researcher_id', 'on_delete': 'CASCADE'}, {'name': 'publication_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'publication', 'foreign_key_column': 'publication_id', 'on_delete': 'CASCADE'}]}, {'table_name': 'research_team', 'columns': [{'name': 'team_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'team_name', 'type': 'TEXT', 'not_null': True}, {'name': 'affiliation_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'affiliation', 'foreign_key_column': 'affiliation_id'}]}, {'table_name': 'researcher_team', 'columns': [{'name': 'researcher_team_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'researcher_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'researcher', 'foreign_key_column': 'researcher_id', 'on_delete': 'CASCADE'}, {'name': 'team_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'research_team', 'foreign_key_column': 'team_id', 'on_delete': 'CASCADE'}]}, {'table_name': 'grant', 'columns': [{'name': 'grant_id', 'type': 'INTEGER', 'primary_key': True}, {'name': 'grant_code', 'type': 'TEXT'}, {'name': 'funding_institution_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'affiliation', 'foreign_key_column': 'affiliation_id'}, {'name': 'researcher_id', 'type': 'INTEGER', 'foreign_key': True, 'foreign_key_table': 'researcher', 'foreign_key_column': 'researcher_id'}]}]
+Ground Truth Entities: dict_keys(['name', 'affiliation', 'shortname', 'fullname', 'homepage'])
+****************************************
+Entity Coverage: 79.88%
+Primary Key Coverage: 100.00%
+Foreign Key Coverage: 100.00%
+****************************************
+
+
+
+
+Average Entity Coverage: 61.82%
+Average Primary Key Coverage: 87.50%
+Average Foreign Key Coverage: 75.00%

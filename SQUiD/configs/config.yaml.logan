@@ -1,0 +1,43 @@
+schema_generation:
+    datapath: "BIRD/bird_dataset"
+    num_of_entries: 192
+    model_name: "claude"
+    prompt_type: "cot"
+    method: "text"
+    base_data_path: "C:/Users/logan/Downloads/squid-reproduction/SQUiD/dataset"
+    logs_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/logs/schema"
+    results_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage1"
+value_identification:
+    datapath: "SyntheticText/merged_dataset2/text_cot_claude"
+    num_of_entries: 192
+    model_name: "claude"
+    method: "symbolic"
+    base_data_path: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage1"
+    logs_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/logs/values"
+    results_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage2"
+    schema_path: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage1/BIRD/bird_dataset/text_cot_claude.json"
+value_population:
+    datapath: "SyntheticText/merged_dataset2/text_cot_claude"
+    num_of_entries: 192
+    model_name: "claude"
+    method: "TS"
+    base_data_path: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage2symbolic"
+    logs_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/logs/population"
+    results_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage3"
+    symbolic_path: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage2symbolic/SyntheticText/merged_dataset2/text_cot_claude.json"
+database_generation:
+    datapath: "SyntheticText/merged_dataset2/text_cot_claude"
+    num_of_entries: 192
+    model_name: "claude"
+    method: "TS"
+    base_data_path: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/stage3"
+    logs_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/logs/database"
+    results_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/"
+baseline:
+    datapath: "SyntheticText/merged_dataset2"
+    num_of_entries: 192
+    model_name: "claude"
+    method: None
+    base_data_path: "C:/Users/logan/Downloads/squid-reproduction/SQUiD/dataset"
+    logs_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/logs/baseline"
+    results_dir: "C:/Users/logan/Downloads/squid-reproduction/results/reproduction/baseline"
