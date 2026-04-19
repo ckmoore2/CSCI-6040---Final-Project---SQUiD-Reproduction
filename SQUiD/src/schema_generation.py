@@ -46,6 +46,7 @@ def generate_schema(config):
     schema_mapping = os.path.join(config['results_dir'], f"{datapath}/{method}_{prompt_type}_{model.llm}_schema.json")
 
     if os.path.exists(results_path):
+        os.makedirs(os.path.dirname(results_path), exist_ok=True)
         with open(results_path, "r", encoding='utf-8') as f:
             updated_json = json.load(f)
 
@@ -89,6 +90,7 @@ def generate_schema(config):
             updated_json.append(updated_dict)
             log(log_file, system_prompt, user_prompt, schema)
 
+        os.makedirs(os.path.dirname(results_path), exist_ok=True)
         with open(results_path, "w", encoding='utf-8') as f2:
             json.dump(updated_json, f2, indent=4)
         with open(schema_mapping, "w", encoding='utf-8') as f3:

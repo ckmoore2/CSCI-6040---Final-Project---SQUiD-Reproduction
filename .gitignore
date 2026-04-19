@@ -1,11 +1,45 @@
+# Secrets
 .env
-*.db
+
+# Python
 __pycache__/
-squid-env/
 *.pyc
 .idea/
-#requirements_mac.txt
-config.yaml.original
 
-analyze_project.py
+# Virtual environments
+squid-env/
+
+# Databases (generated runtime artifacts)
+*.db
+
+# SQUiD runtime configs (rewritten on every run, contain local paths)
+config.yaml
+config.yaml.original
+config.yaml.original.sensitivity_backup
+config.yaml.logan
+SQUiD/configs/config.yaml
+SQUiD/configs/config.yaml.original
+SQUiD/configs/config.yaml.original.sensitivity_backup
+SQUiD/configs/config.yaml.logan
+
+# SQUiD generated databases
+SQUiD/databases/
+
+# Sensitivity analysis — large generated outputs (reproducible from scripts)
+results/sensitivity/*/stage1/
+results/sensitivity/*/stage2symbolic/
+results/sensitivity/*/stage3/
+results/sensitivity/*/stage3TS/
+results/sensitivity/*/TS/
+results/sensitivity/*/baseline/
+results/sensitivity/*/logs/
+results/sensitivity/baseline_batch_status.json
+results/sensitivity/batch_run_status.json
+
+# Windows / internal tooling
 requirements_win.txt
+analyze_project.py
+
+# OS junk
+.DS_Store
+Thumbs.db
